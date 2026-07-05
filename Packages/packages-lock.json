@@ -312,12 +312,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "net.yozolab.daerd": {
-      "version": "file:net.yozolab.daerd",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "vrchat.blackstartx.gesture-manager": {
       "version": "file:vrchat.blackstartx.gesture-manager",
       "depth": 0,
