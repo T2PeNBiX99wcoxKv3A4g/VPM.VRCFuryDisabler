@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.1..0.0.2) - 2026-07-05
+
+### ⚙️ Miscellaneous Tasks
+
+- Update VRCFury Disabler to v0.0.2; add VPM dependencies - ([d976485](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/d97648500422db21b6419da02905f724b91a4d2c))
+- Remove unused `JetBrains.Annotations` import and adjust formatting in `VRCFuryPatches.cs` - ([64c4892](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/64c489296f8fe565f1f9d112f68638d213508965))
+
+### Action
+
+- Update `CHANGELOG.md` - ([07df012](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/07df0128f180ce38377d213bc8b253327e105071))
+
+## New Contributors ❤️
+
+* @github-actions[bot] made their first contribution
+
 ## [0.0.1] - 2026-07-05
 
 ### ⚙️ Miscellaneous Tasks
