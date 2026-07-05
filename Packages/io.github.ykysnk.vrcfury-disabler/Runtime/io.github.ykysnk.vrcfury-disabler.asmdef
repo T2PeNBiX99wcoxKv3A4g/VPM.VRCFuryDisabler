@@ -1,0 +1,14 @@
+{
+    "name": "io.github.ykysnk.vrcfury-disabler",
+    "rootNamespace": "io.github.ykysnk.VRCFuryDisabler",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

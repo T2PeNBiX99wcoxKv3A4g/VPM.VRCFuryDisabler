@@ -1,0 +1,20 @@
+{
+    "name": "io.github.ykysnk.vrcfury-disabler.Editor",
+    "rootNamespace": "io.github.ykysnk.VRCFuryDisabler",
+    "references": [
+        "io.github.ykysnk.utils",
+        "io.github.ykysnk.utils.non-udon",
+        "io.github.ykysnk.vrcfury-disabler"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

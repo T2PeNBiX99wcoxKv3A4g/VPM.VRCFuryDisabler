@@ -1,0 +1,19 @@
+{
+  "name": "io.github.ykysnk.vrcfury-disabler",
+  "displayName": "VRCFury Disabler",
+  "version": "0.0.1",
+  "unity": "2022.3",
+  "description": "Disables hidden features you didn't ask for.",
+  "dependencies": {},
+  "gitDependencies": {},
+  "vpmDependencies": {},
+  "author": {
+    "name": "yukiyosanako / ゆきよさなこ",
+    "email": "github.qszdy@aleeas.com",
+    "url": "https://github.com/T2PeNBiX99wcoxKv3A4g"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "changelogUrl": "https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/blob/main/CHANGELOG.md",
+  "license": "MIT"
+}
