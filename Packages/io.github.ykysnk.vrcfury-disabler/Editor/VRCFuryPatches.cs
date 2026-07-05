@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using io.github.ykysnk.utils;
-using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
 
@@ -51,7 +50,10 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor
         public static class VRCFuryBuilderRun
         {
             private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, "Run");
-            private static readonly MethodInfo CloseMethod = AccessTools.Method(EditorWindowType, nameof(EditorWindow.Close));
+
+            private static readonly MethodInfo CloseMethod =
+                AccessTools.Method(EditorWindowType, nameof(EditorWindow.Close));
+
             private static readonly MethodInfo CloseReplaceMethod = AccessTools.Method(ThisType, nameof(CloseReplace));
 
             public static MethodBase TargetMethod() => Method;
