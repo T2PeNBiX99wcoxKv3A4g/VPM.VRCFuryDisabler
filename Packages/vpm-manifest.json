@@ -38,6 +38,9 @@
     },
     "com.ygdr.animator": {
       "version": "1.0.4"
+    },
+    "com.yank.material-editor": {
+      "version": "1.0.0"
     }
   },
   "locked": {
@@ -133,6 +136,10 @@
       "dependencies": {
         "com.ygdr.mdv": "^1.0.0"
       }
+    },
+    "com.yank.material-editor": {
+      "version": "1.0.0",
+      "dependencies": {}
     }
   }
 }

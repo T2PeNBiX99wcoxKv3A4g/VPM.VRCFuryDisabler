@@ -240,6 +240,12 @@
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       }
     },
+    "com.yank.material-editor": {
+      "version": "file:com.yank.material-editor",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.ygdr.animator": {
       "version": "file:com.ygdr.animator",
       "depth": 0,
