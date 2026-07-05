@@ -37,7 +37,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor
             var progressValue = Mathf.Clamp01(current);
             var percent = Math.Round(progressValue * 100);
             Utils.Log(nameof(VRCFuryPatches), $"Progress ({percent}%): {info}");
-            EditorUtility.DisplayProgressBar($"VRCFury Building {percent}%", info, progressValue);
+            EditorUtility.DisplayProgressBar($"VRCFury Building... {percent}%", info, progressValue);
         }
 
         private static void CloseReplace([CanBeNull] object _)
