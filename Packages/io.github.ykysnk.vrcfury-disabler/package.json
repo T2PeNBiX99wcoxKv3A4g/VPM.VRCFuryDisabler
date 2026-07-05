@@ -1,12 +1,15 @@
 {
   "name": "io.github.ykysnk.vrcfury-disabler",
   "displayName": "VRCFury Disabler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "unity": "2022.3",
   "description": "Disables hidden features you didn't ask for.",
   "dependencies": {},
   "gitDependencies": {},
-  "vpmDependencies": {},
+  "vpmDependencies": {
+    "io.github.ykysnk.utils": ">=1.0.0",
+    "com.vrcfury.vrcfury": ">=1.1348.0"
+  },
   "author": {
     "name": "yukiyosanako / ゆきよさなこ",
     "email": "github.qszdy@aleeas.com",
