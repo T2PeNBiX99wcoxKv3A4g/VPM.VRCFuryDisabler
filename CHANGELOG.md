@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.2..0.0.3) - 2026-07-06
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump VRCFury Disabler to v0.0.3 in package.json - ([e691ff5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/e691ff56deb3fb07612a5e34cfca9d024ffc44c3))
+- Bump VRCFury version to 1.1350.0 in vpm-manifest.json - ([47221d3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/47221d33b7618e43536f83c15acc2e639f02d21b))
+- Replace SuppressMessage with PublicAPI and restrict method access in VRCFuryPatches - ([09324bf](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/09324bfc391ca7d924b1e5e5310338f6f60450da))
+
+### Action
+
+- Update `CHANGELOG.md` - ([3d9f0aa](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/3d9f0aada229721c59a9b8de5af3412e32544ec4))
+
+
 ## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.1..0.0.2) - 2026-07-05
 
 ### ⚙️ Miscellaneous Tasks
