@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using io.github.ykysnk.utils;
+using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
 
@@ -45,8 +45,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor
         }
 
         [HarmonyPatch]
-        [SuppressMessage("ReSharper", "UnusedType.Global")]
-        [SuppressMessage("ReSharper", "UnusedMember.Global")]
+        [PublicAPI]
         public static class VRCFuryBuilderRun
         {
             private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, "Run");
@@ -56,10 +55,10 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor
 
             private static readonly MethodInfo CloseReplaceMethod = AccessTools.Method(ThisType, nameof(CloseReplace));
 
-            public static MethodBase TargetMethod() => Method;
+            private static MethodBase TargetMethod() => Method;
 
             [HarmonyTranspiler]
-            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
                 foreach (var code in instructions)
                 {
@@ -80,8 +79,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor
         }
 
         [HarmonyPatch]
-        [SuppressMessage("ReSharper", "UnusedType.Global")]
-        [SuppressMessage("ReSharper", "UnusedMember.Global")]
+        [PublicAPI]
         public static class VRCFuryBuilderApplyFuryConfigs
         {
             private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, "ApplyFuryConfigs");
@@ -90,10 +88,10 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor
             private static readonly MethodInfo ProgressReplaceMethod =
                 AccessTools.Method(ThisType, nameof(ProgressReplace));
 
-            public static MethodBase TargetMethod() => Method;
+            private static MethodBase TargetMethod() => Method;
 
             [HarmonyTranspiler]
-            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
                 foreach (var code in instructions)
                 {
