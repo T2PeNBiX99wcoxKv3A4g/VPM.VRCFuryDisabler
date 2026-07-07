@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.4](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.3..0.0.4) - 2026-07-07
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump VRCFury Disabler to v0.0.4 and update io.github.ykysnk.utils to v1.1.0 in package.json - ([8d2c207](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/8d2c20722b964b2b7268a52c511c91a847730b69))
+- Extract VRCFuryBuilder-specific logic into new VRCFuryBuilderPatch class for better separation of concerns - ([e7412e4](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/e7412e44d5393f70b3d9e0bb32ab84a8689de72d))
+- Refactor VRCFuryPatches into modular Loader class for improved patch organization - ([66ec8d0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/66ec8d0016df13afed91d4a54eadde4b4962cf5d))
+- Add io.github.ykysnk.utils.Editor to assembly references in VRCFury Disabler - ([ffb3166](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/ffb31667f7bf9891889553f16f5d40ffbd33063e))
+- Bump io.github.ykysnk.utils to v1.1.2 in vpm-manifest.json - ([05ae279](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/05ae279c2cc0ab9d3190acbb4705df0b65439a1b))
+- Bump io.github.ykysnk.utils to v1.1.1 in vpm-manifest.json - ([cf89c42](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/cf89c42192f702c7a0a78488c0aa8bf7b80e6794))
+- Bump jp.lilxyzw.editortoolbox to v2.0.2 and io.github.ykysnk.utils to v1.1.0 in vpm-manifest.json - ([ab80f2f](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/ab80f2fd5af1a080480d2c5880225cdb74147bed))
+
+### Action
+
+- Update `CHANGELOG.md` - ([1d0caf3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/1d0caf38a226128a074b9a98f11bc2a3f5c76529))
+
+
 ## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.2..0.0.3) - 2026-07-06
 
 ### ⚙️ Miscellaneous Tasks
