@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.4..0.0.5) - 2026-07-07
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump VRCFury Disabler to v0.0.5 in package.json - ([6f72fdc](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/6f72fdc5807a97c81c596378ee71bcf14d89e41a))
+- Make `Loader` and `VRCFuryBuilderPatch` classes internal for improved encapsulation - ([b80ecf0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/b80ecf092d76dcfb72bf5348a7d80aff19ac59ea))
+- Bump io.github.ykysnk.utils to v1.2.0 in vpm-manifest.json - ([a75895f](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/a75895f25a54b952e6030cfd01e5cb479cda2737))
+
+### Action
+
+- Update `CHANGELOG.md` - ([9cf77f0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/9cf77f045b5011719e24a8b99771825802dce5ae))
+
+
 ## [0.0.4](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.3..0.0.4) - 2026-07-07
 
 ### ⚙️ Miscellaneous Tasks
