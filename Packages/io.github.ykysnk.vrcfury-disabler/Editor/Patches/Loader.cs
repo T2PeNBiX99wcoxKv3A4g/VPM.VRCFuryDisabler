@@ -5,7 +5,7 @@ using io.github.ykysnk.VRCFuryDisabler.Editor.Patches;
 
 namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 {
-    public class Loader : PatchLoader<Loader>
+    internal class Loader : PatchLoader<Loader>
     {
         public override string QualifiedName => "io.github.ykysnk.vrcfury-disabler.patches";
         public override string DisplayName => "VRCFury Disabler";

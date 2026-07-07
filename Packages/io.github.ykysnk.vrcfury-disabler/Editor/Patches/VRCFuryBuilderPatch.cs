@@ -11,7 +11,7 @@ using UnityEngine;
 
 namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 {
-    public class VRCFuryBuilderPatch : Patch<VRCFuryBuilderPatch>
+    internal class VRCFuryBuilderPatch : Patch<VRCFuryBuilderPatch>
     {
         private static readonly Type VRCFuryBuilderType = AccessTools.TypeByName("VF.Builder.VRCFuryBuilder");
         private static readonly Type VRCFProgressWindowType = AccessTools.TypeByName("VF.VRCFProgressWindow");
@@ -38,9 +38,9 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 
         [HarmonyPatch]
         [PublicAPI]
-        public static class VRCFuryBuilderRun
+        private new static class Run
         {
-            private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, "Run");
+            private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, nameof(Run));
 
             private static readonly MethodInfo CloseMethod =
                 AccessTools.Method(EditorWindowType, nameof(EditorWindow.Close));
@@ -72,9 +72,9 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 
         [HarmonyPatch]
         [PublicAPI]
-        public static class VRCFuryBuilderApplyFuryConfigs
+        private static class ApplyFuryConfigs
         {
-            private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, "ApplyFuryConfigs");
+            private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, nameof(ApplyFuryConfigs));
             private static readonly MethodInfo ProgressMethod = AccessTools.Method(VRCFProgressWindowType, "Progress");
 
             private static readonly MethodInfo ProgressReplaceMethod =
