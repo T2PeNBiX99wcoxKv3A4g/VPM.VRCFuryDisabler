@@ -4,38 +4,35 @@ using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using io.github.ykysnk.utils;
+using io.github.ykysnk.utils.Editor.Patches;
+using io.github.ykysnk.VRCFuryDisabler.Editor.Patches;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
 
-namespace io.github.ykysnk.VRCFuryDisabler.Editor
+[assembly: ExportsPatchLoader(typeof(Loader))]
+
+namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 {
-    [InitializeOnLoad]
-    internal static class VRCFuryPatches
+    public class Loader : PatchLoader<Loader>
     {
-        private const string PatchId = "io.github.ykysnk.vrcfury-disabler.patches";
-        private static readonly Type ThisType = typeof(VRCFuryPatches);
         private static readonly Type VRCFProgressWindowType = AccessTools.TypeByName("VF.VRCFProgressWindow");
         private static readonly Type VRCFuryBuilderType = AccessTools.TypeByName("VF.Builder.VRCFuryBuilder");
         private static readonly Type EditorWindowType = typeof(EditorWindow);
 
         private static readonly MethodInfo CreateMethod = AccessTools.Method(VRCFProgressWindowType, "Create");
+        public override string QualifiedName => "io.github.ykysnk.vrcfury-disabler.patches";
+        public override string DisplayName => "VRCFury Disabler";
 
-        static VRCFuryPatches()
+        public override void Load()
         {
-            var harmony = new Harmony(PatchId);
-
-            harmony.PatchAll(ThisType.Assembly);
-
-            AssemblyReloadEvents.beforeAssemblyReload += () => harmony.UnpatchAll(PatchId);
-            Utils.Log(nameof(VRCFuryPatches), "VRCFury Disabler Patches Initialized");
         }
 
         private static void ProgressReplace(object _, float current, string info)
         {
             var progressValue = Mathf.Clamp01(current);
             var percent = Math.Round(progressValue * 100);
-            Utils.Log(nameof(VRCFuryPatches), $"Progress ({percent}%): {info}");
+            Utils.Log("VRCFury", $"Progress ({percent}%): {info}");
             EditorUtility.DisplayProgressBar($"VRCFury Building... {percent}%", info, progressValue);
         }
 
