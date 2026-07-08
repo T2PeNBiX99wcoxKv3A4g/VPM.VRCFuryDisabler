@@ -13,6 +13,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 {
     internal class VRCFuryBuilderPatch : Patch<VRCFuryBuilderPatch>
     {
+        private static readonly Type PatchType = ThisType;
         private static readonly Type VRCFuryBuilderType = AccessTools.TypeByName("VF.Builder.VRCFuryBuilder");
         private static readonly Type VRCFProgressWindowType = AccessTools.TypeByName("VF.VRCFProgressWindow");
         private static readonly Type EditorWindowType = typeof(EditorWindow);
@@ -42,7 +43,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
             private static readonly MethodInfo CloseMethod =
                 AccessTools.Method(EditorWindowType, nameof(EditorWindow.Close));
 
-            private static readonly MethodInfo CloseReplaceMethod = AccessTools.Method(ThisType, nameof(CloseReplace));
+            private static readonly MethodInfo CloseReplaceMethod = AccessTools.Method(PatchType, nameof(CloseReplace));
             public override MethodInfo TargetMethod { get; } = AccessTools.Method(VRCFuryBuilderType, nameof(Run));
             public override string TranspilerMethod => nameof(Transpiler);
 
@@ -59,12 +60,12 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
             {
                 foreach (var code in instructions)
                 {
-                    if (code.opcode == OpCodes.Call && (MethodInfo)code.operand == CreateMethod)
+                    if (code.opcode == OpCodes.Call && (MethodInfo?)code.operand == CreateMethod)
                     {
                         code.opcode = OpCodes.Ldnull;
                         code.operand = null;
                     }
-                    else if (code.opcode == OpCodes.Callvirt && (MethodInfo)code.operand == CloseMethod)
+                    else if (code.opcode == OpCodes.Callvirt && (MethodInfo?)code.operand == CloseMethod)
                     {
                         code.opcode = OpCodes.Call;
                         code.operand = CloseReplaceMethod;
@@ -81,7 +82,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
             private static readonly MethodInfo ProgressMethod = AccessTools.Method(VRCFProgressWindowType, "Progress");
 
             private static readonly MethodInfo ProgressReplaceMethod =
-                AccessTools.Method(ThisType, nameof(ProgressReplace));
+                AccessTools.Method(PatchType, nameof(ProgressReplace));
 
             public override MethodInfo TargetMethod { get; } =
                 AccessTools.Method(VRCFuryBuilderType, nameof(ApplyFuryConfigs));
@@ -101,7 +102,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
             {
                 foreach (var code in instructions)
                 {
-                    if (code.opcode == OpCodes.Callvirt && (MethodInfo)code.operand == ProgressMethod)
+                    if (code.opcode == OpCodes.Callvirt && (MethodInfo?)code.operand == ProgressMethod)
                     {
                         code.opcode = OpCodes.Call;
                         code.operand = ProgressReplaceMethod;
