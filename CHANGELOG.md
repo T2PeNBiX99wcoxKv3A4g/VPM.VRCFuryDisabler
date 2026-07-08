@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.0.7](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.5..0.0.7) - 2026-07-08
+
+### 🐛 Bug Fixes
+
+- Fix `ThisType` issue - ([57812d5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/57812d565be8ccc4845abbfb963125418f4c0c8b))
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump VRCFury Disabler to v0.0.7 in package.json - ([b459739](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/b4597399f5def971cc0f3f2d33f89b76ceda3051))
+- Bump io.github.ykysnk.utils to v1.4.5 in vpm-manifest.json - ([c91d920](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/c91d920b044c67596d4c301a18b480b31874bf37))
+- Bump io.github.ykysnk.utils to v1.4.4 in vpm-manifest.json - ([4181f48](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/4181f482048c9213c595e59485c4a125ee7292cb))
+- Bump io.github.ykysnk.utils to v1.4.3 in vpm-manifest.json - ([48bd9ed](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/48bd9edda04f0257350826f1e4da37507749f27b))
+- Bump VRCFury Disabler to v0.0.6 in package.json - ([c92b70b](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/c92b70bf77653681a8877e6db090affd52e47a03))
+- Refactor `VRCFuryBuilderPatch` methods to improve modularity and enable conditional compilation - ([3bc9af8](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/3bc9af8c1d98f4f9edc4313ca55787caa99e2ac5))
+- Add version defines for VRCF Disabler (#com.vrchat.base, #com.vrchat.avatars) to asmdef - ([7e83183](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/7e83183b838f3c2a97c0acc637fa6569df0b56ea))
+- Enable nullable reference types in VRCFury Disabler - ([f627a4c](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/f627a4cdac9263fa81a2b67891894d25f167174e))
+- Bump dependencies in vpm-manifest.json (ykysnk.utils to v1.4.2, yky-toolkit to v1.1.2, VRCFury to v1.1353.0) - ([9820d32](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/9820d328a165db61f0f3c7e0c282328820949ed2))
+
+### Action
+
+- Update `CHANGELOG.md` - ([3bcd918](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/3bcd91811b5a341cabf511806050aee67f82399e))
+
+
 ## [0.0.5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.4..0.0.5) - 2026-07-07
 
 ### ⚙️ Miscellaneous Tasks
