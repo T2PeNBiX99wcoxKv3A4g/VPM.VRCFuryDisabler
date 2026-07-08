@@ -16,6 +16,17 @@
     "precompiledReferences": [],
     "autoReferenced": false,
     "defineConstraints": [],
-    "versionDefines": [],
+  "versionDefines": [
+    {
+      "name": "com.vrchat.base",
+      "expression": "",
+      "define": "VRCF_DISABLER_BASE"
+    },
+    {
+      "name": "com.vrchat.avatars",
+      "expression": "",
+      "define": "VRCF_DISABLER_AVATARS"
+    }
+  ],
     "noEngineReferences": false
 }
