@@ -12,7 +12,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 
         public override void Load()
         {
-            VRCFuryBuilderPatch.Instance.Run();
+            Run(VRCFuryBuilderPatch.Instance);
         }
     }
 }

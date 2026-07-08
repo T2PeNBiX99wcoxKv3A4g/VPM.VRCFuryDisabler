@@ -36,20 +36,25 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
             EditorUtility.ClearProgressBar();
         }
 
-        [HarmonyPatch]
-        [PublicAPI]
-        private new static class Run
+        [UsedImplicitly]
+        private class Run : PatchMethod<Run>
         {
-            private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, nameof(Run));
-
             private static readonly MethodInfo CloseMethod =
                 AccessTools.Method(EditorWindowType, nameof(EditorWindow.Close));
 
             private static readonly MethodInfo CloseReplaceMethod = AccessTools.Method(ThisType, nameof(CloseReplace));
+            public override MethodInfo TargetMethod { get; } = AccessTools.Method(VRCFuryBuilderType, nameof(Run));
+            public override string TranspilerMethod => nameof(Transpiler);
 
-            private static MethodBase TargetMethod() => Method;
+            protected override bool Prepare(MethodInfo? original, Harmony harmony)
+            {
+#if VRCF_DISABLER_AVATARS
+                return true;
+#else
+                return false;
+#endif
+            }
 
-            [HarmonyTranspiler]
             private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
                 foreach (var code in instructions)
@@ -70,19 +75,28 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
             }
         }
 
-        [HarmonyPatch]
-        [PublicAPI]
-        private static class ApplyFuryConfigs
+        [UsedImplicitly]
+        private class ApplyFuryConfigs : PatchMethod<ApplyFuryConfigs>
         {
-            private static readonly MethodInfo Method = AccessTools.Method(VRCFuryBuilderType, nameof(ApplyFuryConfigs));
             private static readonly MethodInfo ProgressMethod = AccessTools.Method(VRCFProgressWindowType, "Progress");
 
             private static readonly MethodInfo ProgressReplaceMethod =
                 AccessTools.Method(ThisType, nameof(ProgressReplace));
 
-            private static MethodBase TargetMethod() => Method;
+            public override MethodInfo TargetMethod { get; } =
+                AccessTools.Method(VRCFuryBuilderType, nameof(ApplyFuryConfigs));
 
-            [HarmonyTranspiler]
+            public override string TranspilerMethod => nameof(Transpiler);
+
+            protected override bool Prepare(MethodInfo? original, Harmony harmony)
+            {
+#if VRCF_DISABLER_AVATARS
+                return true;
+#else
+                return false;
+#endif
+            }
+
             private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
                 foreach (var code in instructions)
