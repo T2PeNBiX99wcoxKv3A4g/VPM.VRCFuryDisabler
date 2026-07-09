@@ -20,7 +20,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
 
         private static readonly MethodInfo CreateMethod = AccessTools.Method(VRCFProgressWindowType, "Create");
 
-        protected override void Execute()
+        protected override void Execute(Harmony harmony)
         {
         }
 
