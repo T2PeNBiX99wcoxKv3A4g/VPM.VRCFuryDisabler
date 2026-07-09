@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.0.8](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.7..0.0.8) - 2026-07-09
+
+### 🚜 Refactor
+
+- Update `DisplayName` in `Loader` class to "VRCFury Disabler Patches" - ([e720243](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/e72024307fee25ab043e5196a38ee152b101c372))
+- Update `Execute` method to accept `Harmony` instance in `VRCFuryBuilderPatch` - ([ff8c87e](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/ff8c87e56e0d78dee5a9cae1329d640b29a6fbaf))
+- Update `Load` method to accept `Harmony` instance in `Loader` class - ([c47763b](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/c47763b699cabba74b25df4ad5cec78ea4fee0f9))
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump VRCFury Disabler to v0.0.8 in package.json - ([b9311a6](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/b9311a635ab3a2930d4f062ddfda236b3dc225ef))
+- Normalize formatting in VRCFury Disabler Editor asmdef - ([d7f0a88](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/d7f0a88c14db6d3bcac7fdef89b82fbe473fb07e))
+- Bump dependencies in vpm-manifest.json (ykysnk.utils to v1.5.0, yky-toolkit to v1.1.3, VRCFury to v1.1356.0, ygdr.animator to v1.0.5) - ([ad7a5da](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/ad7a5da494a58c542f9eb0fac0407a5a7eda7d04))
+
+### Action
+
+- Update `CHANGELOG.md` - ([5464986](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/commit/546498655c7602b44accc691919137de2ecc35a2))
+
+
 ## [0.0.7](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.VRCFuryDisabler/compare/0.0.5..0.0.7) - 2026-07-08
 
 ### 🐛 Bug Fixes
