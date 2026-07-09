@@ -1,3 +1,4 @@
+using HarmonyLib;
 using io.github.ykysnk.utils.Editor.Patches;
 using io.github.ykysnk.VRCFuryDisabler.Editor.Patches;
 
@@ -10,7 +11,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
         public override string QualifiedName => "io.github.ykysnk.vrcfury-disabler.patches";
         public override string DisplayName => "VRCFury Disabler";
 
-        public override void Load()
+        public override void Load(Harmony harmony)
         {
             Run(VRCFuryBuilderPatch.Instance);
         }
