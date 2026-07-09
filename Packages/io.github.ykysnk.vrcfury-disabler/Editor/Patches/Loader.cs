@@ -9,7 +9,7 @@ namespace io.github.ykysnk.VRCFuryDisabler.Editor.Patches
     internal class Loader : PatchLoader<Loader>
     {
         public override string QualifiedName => "io.github.ykysnk.vrcfury-disabler.patches";
-        public override string DisplayName => "VRCFury Disabler";
+        public override string DisplayName => "VRCFury Disabler Patches";
 
         public override void Load(Harmony harmony)
         {
